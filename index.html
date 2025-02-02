@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy website</title>
+    <link rel="stylesheet" href="new.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="menu-btn" onclick="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+        <h1>Quizzy Website</h1>
+    </header>
+    
+    <main>   
+     <div class="container">
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+    </main>
+    
+    <footer>
+        <h4>&copy; 2025 Quizzy Website</h4>
+    </footer>
+
+    <div id="menu-btn" class="menu">
+      <ul>
+        <li><a href="online.html"> Start online quiz</a></li><br>
+             <li><a href="about.html">About Quizzy</a></li><br>
+        <li><a href="quizzy.html">Start offline quiz</a></li>
+      </ul>
+    </div>
+
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu-btn');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+
+    
+    <script src="front.js"></script>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzy Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      strong{
+          color: white;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quizzy Website</h1>
+  </header>
+  <h3><marquee behavior="scroll" direction="left">20 Questions in All .</marquee></h3>
+  
+  <main>
+    <div id="quiz-container"></div>
+    <button id="submit-button">Submit Quiz</button>
+    <div id="result-container" class="hidden">
+      <h2>Quizzy Results</h2>
+      <p id="score"></p>
+      <div id="feedback"></div>
+      <button id="restart-button">Restart Quiz</button>
+    </div>
+    <div id="timer">Time Left: 9:00</div> <!-- Added timer element -->
+  </main>
+  
+  <footer id="footer">
+    <h4>&copy; 2025 Quizzy Website</h4>
+
+  </footer>
+  
+  <script src="online.js"></script>
+</body>
+</html>
